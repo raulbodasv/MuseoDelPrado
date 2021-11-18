@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+
+<!-- HE PUESTO UN ID AL body PARA QUE EL BOTON VUELVA ARRIBA DEL TODO EL BOTON DE SUBIR, YA QUE EL HEADER TIENE POSICION FIXED Y NO SUBIRÍA-->
+
+<body id="body">
+  <header>
+    <div class="container__header">
+    <div class="container__logo">
+      <h1 class="logo__nombre">Museo Nacional del Prado</h1>
+    </div>
+
+
+    <nav class="menu__header">
+      <ul class="nav__header">
+        <li class="nav__item"><a class="nav__link" href="index.html">Inicio</a></li>
+        <li class="nav__item"><a class="nav__link" href="pages/cuadros.html">Cuadros</a></li>
+        <li class="nav__item"><a class="nav__link" href="pages/artistas.html">Artistas</a></li>
+        <li class="nav__item"><a class="nav__link" href="pages/visitas.html">Visitas</a></li>
+        <li class="nav__item"><a class="nav__link" href="pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <main>
+    <!-- Video que se inicia al entrar a la pagina, muteado sin controles y en blucle-->
+    <video class="img__fondo-museo" src="assets/video/Bienvenido. Museo Nacional del Prado-Cortado.mp4" muted autoplay loop reload></video>
+
+    <h2 class="title_apartado">Localización</h2>
+
+    <div class="container__mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12151.109604603413!2d-3.6921271!3d40.4137818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1094f07d93ad885a!2sMuseo%20Nacional%20del%20Prado!5e0!3m2!1ses!2ses!4v1636682757461!5m2!1ses!2ses"
+        width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <h2 class="title_apartado">Próximos eventos</h2>
+<!-- Al pasar por encima de la imagen resalta con mas color un box shadow y un poquito mas grande la imagen-->
+    <section class="container__noticias">
+      <article class="noticia">
+        <div class="container__noticia-img">
+          <img class="imagen" src="assets/img/virgen-humildad.jpg">
+        </div>
+        <strong class="title__noticia">Pintura italiana de los siglos XIV al XX</strong>
+        <span class="subtitle__noticia"> 14, 21 y 22 de noviembre de 2021 modalidad presencial. 2 de diciembre de 2021
+          modalidad online. </span>
+      </article>
+
+      <article class="noticia">
+        <div class="container__noticia-img">
+          <img class="imagen" src="assets/img/hercules-corte-onfalia.jpg">
+        </div>
+        <strong class="title__noticia">Colección permanente</strong>
+        <span class="subtitle__noticia"> De septiembre de 2021 a junio de 2022. </span>
+      </article>
+
+      <article class="noticia">
+        <div class="container__noticia-img">
+          <img class="imagen" src="assets/img/Cuatro_estaciones.jpg">
+        </div>
+        <strong class="title__noticia">Las cuatro estaciones: Otoño</strong>
+        <span class="subtitle__noticia"> 20 y 27 de diciembre de 2021 modalidad presencial. 1 de enero de 2022
+          modalidad online.</span>
+      </article>
+    </section>
+
+    <!-- Flecha para subir al inicio de la pagina-->
+    <div class="flecha">
+      <a href="#body"><img src="./assets/img/more-leaves-on-green.png" alt="" /></a>
+    </div>
+
+  </main>
+  <footer>
+    <section class="container__footer">
+      <article class="container__menu-footer">
+        <!-- Lista con todos los html -->
+        <nav class="menu__footer">
+          <ul class="nav__footer">
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer" href="index.html">Inicio</a></li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer" href="pages/cuadros.html">Cuadros</a>
+            </li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer"
+                href="pages/artistas.html">Artistas</a></li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer"
+                href="pages/visitas.html">Visitas</a></li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer"
+                href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </article>
+  <!-- Mi nombre -->
+      <article class="container-nombre__footer">
+        <p class="texto__footer nombre__footer">Raul Bodas</p>
+      </article>
+
+      <!-- Imagen de el gobierno de España -->
+      <article class="container__img-footer">
+        <div class="img-footer">
+          <img class="imagen" src="assets/img/logo_cultura.svg" alt="">
+        </div>
+      </article>
+
+
+    </section>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+/**CSS GENERAL**/
+
+@font-face {
+    font-family: 'Rubik Bold Italic';
+    src: url(../assets/font/static/Rubik-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik Bold';
+    src: url(../assets/font/static/Rubik-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Rubik Light';
+    src: url(../assets/font/static/Rubik-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik Light Normal';
+    src: url(../assets/font/static/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: 'YujiSyuku';
+    src: url(../assets/font/YujiSyuku-Regular.ttf);
+}
+
+
+
+/* scroll-behavior: smooth; le da un toque de elegancia a la pagina haciendo la transicion de subir arriba con el boton lenta y no de manera brusca */
+html{
+    scroll-behavior: smooth; 
+  }
+
+  /**He usado z-index por que el contenido pasaba casi todo por encima sobretodo las imagenes**/
+header{
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.438);
+    display: inline-block;
+    position: fixed; 
+    z-index: 20;
+}
+
+header:hover{
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+/**Le doy un padding-top por que al tener el menu position fixed se queda por defecto el contenido debajo**/
+main{
+    padding-top: 6rem;
+}
+
+.container__header{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.container__logo{
+    display: inline-block;
+}
+
+.logo__nombre{
+    color: white;
+    font-size: 2rem;
+    font-variant: small-caps;
+    font-family: 'YujiSyuku';
+    padding-left: 2rem;
+    display: inline-block;
+}
+
+.menu__header{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20%;
+}
+
+.nav__item{
+    display: inline-block;
+}
+
+.nav__link{
+    text-decoration: none;   
+    padding: 1rem 1.4rem;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    font-family: 'YujiSyuku';
+    color: white;
+}
+
+.nav__link:hover{
+    background-color: rgba(255, 255, 255, 0.37);
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.img__fondo-museo{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    
+}
+
+.title_apartado{
+    border-top: 2px #2D2D2D dotted;
+    width: 500px;
+    margin: 4rem auto 3rem auto;
+    text-align: center;
+    color: #2D2D2D;
+    font-size: 4rem;
+    font-variant: small-caps;
+    font-family: 'Rubik Bold';
+}
+
+/**Estilo que doy a todas las imagenes para que se adapten al contenedor**/
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+footer{
+    background-color: #2D2D2D;
+    display: inline-block;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.container__footer{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.texto__footer{
+    color: #CCCCCC;
+    display: inline-block;
+}
+
+.container__menu-footer{
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+}
+
+.menu__footer{
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.nav__footer{
+    width: 2rem;
+}
+
+.nav__item-footer{
+    list-style: none;
+    display: inline-block;
+    margin: .2rem;
+}
+
+.nav__link-footer{
+    text-decoration: none;
+    font-family: 'Rubik Light Normal';
+}
+
+
+.container__img-footer{
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    margin: auto;
+}
+
+.img-footer{
+    width: 200px;
+    margin: auto;
+}
+
+.container-nombre__footer{
+    display: inline-block;
+    width: 400px;
+    margin: auto;
+}
+
+.nombre__footer{
+    font-size: 2rem;
+    font-family: 'Rubik Bold';
+}   
+
+.flecha{
+    position: fixed;
+    bottom: 60px;
+    height: 50px;
+    right: 50px;
+    width: 90px;
+    height: 90px;
+    background-color: #ffffff;
+    text-align: center;
+    clip-path: circle();
+    border: #2D2D2D 4px solid;
+    border-radius: 3.2rem;
+    filter: opacity(0.5);
+  }
+
+  /**Le doy un estilo que al pasar por encima se vea sin transparencia**/
+  .flecha:hover{
+    filter: opacity(1);
+  }
+  
+  /*Imagen de dentro*/
+  .flecha a img{
+    width: 60px;
+    clip-path: polygon(100% 51%, 65% 51%, 65% 100%, 34% 100%, 35% 51%, 0 51%, 51% 0);
+    vertical-align: middle;
+    margin: .8rem;
+
+  }

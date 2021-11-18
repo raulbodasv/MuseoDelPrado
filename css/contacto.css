@@ -1,0 +1,104 @@
+/* contenedor de el email del hotel*/
+main{
+    padding-top: 10rem;
+}
+
+.container__tel{
+    margin: auto;
+    width: 40%;
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    background-color: #2D2D2D;
+  }
+  
+  .container__tel:hover{
+    background-color: #616161;
+  }
+  
+  /**El telefono del museo**/
+  .container__tel a{
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: 1.8rem;
+    font-family: 'Rubik Bold';
+    font-weight: bold;
+     
+  }
+  
+  /**Separador con una o**/
+  #separador__form{
+    width: 300px;
+    margin: 5rem auto;
+    font-size: 3rem;
+    text-align: center;
+    color: #2D2D2D;
+    font-family: 'Rubik Bold';
+  }
+  
+  /**Contenedor de el formulario**/
+  .container__form{
+    margin-bottom: 3rem;
+  }
+  
+
+  fieldset{
+    margin: auto;
+    width: 40%;
+    background-image: url(../assets/img/ep_naturalwhite.png);
+    height: 700px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+
+  .title__form{
+    color: #2D2D2D;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Rubik Bold';
+    padding: 0 3rem;
+  }
+  
+
+  /**separador de casillas con el label y el input de dentro**/
+  .campo__form{
+    margin: 2rem 0;
+  }
+  
+  .nombre__campo{
+    color: #2D2D2D;
+    font-size: 1.2rem;
+    font-family: 'Rubik Light Italic';
+    margin-right: 1rem;
+  }
+  
+  .nombre__campo::after{
+    content: " *";
+    color: #ff0000;
+  }
+  
+  .bottom__campo::before{
+    content: " *";
+    color: #ff0000;
+  }
+  
+  /* estilo de los botones de enviar y limpiar campos*/
+  input[value="Enviar"],
+  input[value="Limpiar campos"]{
+    margin-top: 1.2rem;
+    background-color: #2D2D2D;
+    color: #CCCCCC;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+  }
+  
+  /* estilo de los botones de enviar y limpiar campos al pasar por encima*/
+  input[value="Enviar"]:hover,
+  input[value="Limpiar campos"]:hover{
+    background-color: #616161;
+    border-radius: 5px;
+  }
+  

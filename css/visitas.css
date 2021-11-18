@@ -1,0 +1,57 @@
+/**Contenedor para centrar**/
+.container__visitas{
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+/**Contenedor de los horarios**/
+.container__horario{
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.title__horario{
+    border-bottom: none;
+    background-color: #2D2D2D;
+    font-variant: small-caps;
+    color: white;
+    font-family: 'YujiSyuku';
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.table{
+    margin: 4rem auto;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-spacing: 0;  
+    border: 2px solid black;
+}
+
+/**Poner una fila de cada color para el horario**/
+.fila__table--horario:nth-child(2n){
+    background-color: #fcdada;
+    
+}
+
+.casilla__table{
+    font-family: 'Rubik Bold';
+}
+
+/**Contenedor de los tarifas**/
+.container__tarifas{
+    width: 300px;
+    vertical-align: top;
+    display: inline-block;
+
+}
+
+/**Poner una fila de cada color para las tarifas**/
+.fila__table--tarifas:nth-child(2n){
+    background-color: #2d2d2d81;
+    
+}

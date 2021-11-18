@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contacto.css" />
+</head>
+
+<!-- HE PUESTO UN ID AL body PARA QUE EL BOTON VUELVA ARRIBA DEL TODO, YA QUE EL HEADER TIENE POSICION FIXED Y NO SUBIRÍA-->
+
+<body id="body">
+  <header>
+    <div class="container__header">
+      <div class="container__logo">
+        <h1 class="logo__nombre">Museo Nacional del Prado</h1>
+      </div>
+      <nav class="menu__header">
+        <ul class="nav__header">
+          <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+          <li class="nav__item"><a class="nav__link" href="cuadros.html">Cuadros</a></li>
+          <li class="nav__item"><a class="nav__link" href="artistas.html">Artistas</a></li>
+          <li class="nav__item"><a class="nav__link" href="visitas.html">Visitas</a></li>
+          <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Pulsando al boton se abre directamente para llamar-->
+    <div class="container__tel">
+      <a href="tel:902107077">Llamar al Museo del Prado</a>
+    </div>
+
+    <p id="separador__form"> O rellenar </p>
+
+    <!--La otra opción de contacto es rellenando el formulario-->
+    <section>
+      <article class="container__form">
+        <form action="contacto.html" method="post">
+          <fieldset>
+            <legend class="title__form">Formulario de contacto</legend>
+            <p class="campo__form">
+
+              <!--Valido el nombre para que no pueda añadir simbolos ni caracteres raros y maximo 30 caracteres-->
+              <label class="nombre__campo">Nombre </label>
+              <input type="text" required placeholder="Introduce tu nombre" pattern="[a-z A-Z ñÑáéíóúÁÉÍÓÚüÜ ]*"
+                maxlength="30" minlength="1" />
+            </p>
+
+            <!--Valido los apellidos para que no pueda añadir simbolos ni caracteres raros y maximo 40 caracteres-->
+            <p class="campo__form">
+              <label class="nombre__campo">
+                Apellidos: </label>
+              <input type="text" required placeholder="Introduce tus apellidos" pattern="[a-z A-Z ñÑáéíóúÁÉÍÓÚüÜ ]*"
+                maxlength="40" minlength="1" />
+            </p>
+
+            <!--Valido el email poniendolo de tipo email-->
+            <p class="campo__form">
+              <label class="nombre__campo"> Email:</label>
+              <input type="email" required placeholder="Introduce un email" />
+            </p>
+
+            <!--El select contiene los motivos por los que se podrian poner en contacto-->
+            <p class="campo__form">
+              <label class="nombre__campo"> Motivo consulta: </label>
+              <select name="estado" required>
+                <option value="">---</option>
+                <option value="fallo">Fallo en la pagina</option>
+                <option value="eventos">Mas informacion de eventos</option>
+                <option value="Problemas">Dato de la pagina equivocado</option>
+                <option value="otros">Otros</option>
+              </select>
+            </p>
+
+            <!--El textarea para que se deserolle el motivo-->
+            <p class="campo__form">
+              <textarea name="" cols="50" rows="10"></textarea>
+            </p>
+
+            <!--Aceptar si o si los terminos y condiciones-->
+            <p>
+              <input type="checkbox" name="casillas" required />
+              <label class="bottom__campo">Acepto los terminos y condiciones</label>
+            </p>
+            <p>
+              <input type="checkbox" name="casillas">
+              <label>Deseo recibir correos electronicos con ofertas nuevas</label>
+            </p>
+
+            <!--El boton enviar envia el formulario-->
+            <input type="submit" value="Enviar" />
+
+            <!--El boton limpiar campos borra la informacion del formulario-->
+            <input type="reset" value="Limpiar campos">
+          </fieldset>
+        </form>
+      </article>
+    </section>
+
+
+    <div class="flecha">
+      <a href="#body"><img src="../assets/img/more-leaves-on-green.png" alt="" /></a>
+    </div>
+  </main>
+
+  <footer>
+    <section class="container__footer">
+      <article class="container__menu-footer">
+        <nav class="menu__footer">
+          <ul class="nav__footer">
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer" href="../index.html">Inicio</a></li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer" href="cuadros.html">Cuadros</a></li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer" href="artistas.html">Artistas</a>
+            </li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer" href="visitas.html">Visitas</a>
+            </li>
+            <li class="nav__item-footer"><a class="nav__link-footer texto__footer" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="container-nombre__footer">
+        <p class="texto__footer nombre__footer">Raul Bodas</p>
+      </article>
+
+      <article class="container__img-footer">
+        <div class="img-footer">
+          <img class="imagen" src="../assets/img/logo_cultura.svg" alt="">
+        </div>
+      </article>
+
+
+    </section>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
